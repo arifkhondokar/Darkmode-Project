@@ -1,0 +1,118 @@
+     * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+    a{
+        text-decoration: none;
+    }
+    h1,h2,h3,h4,h5,h6,p{
+        line-height: 0.8;
+    }
+    ul,ol{
+        list-style-type: none;
+    }
+    .main__container{
+        width: 1280px;
+        margin: 0 auto;
+    }
+/* ----------------------------------------------------------- */
+
+  .dark__btn {
+    width: 80px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: #00bef878;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+  }
+  .dark__btn::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    left: 7px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #000000b8;
+    transition: all ease 0.3s;
+  }
+  .dark__btn.active::after {
+    left: 40px;
+  }
+/* ------------------------------------------------------------------------- */
+  .showcase {
+    padding: 100px 50px;
+    background-color: #f8f8f8;
+  }
+  
+  .showcase__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .showcase__wrapper {
+    flex: 1 1 23%; /* Adjust the width of each wrapper */
+    margin: 15px 20px;
+  }
+  
+  .showcase__wrapper .section__title {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .showcase_item {
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .showcase__img-box {
+    width: 500px;
+    height: 600px;
+    object-fit: cover;
+    display: block;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .showcase__img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: all ease 0.5s;
+  }
+  
+  .showcase__img:hover {
+    transform: scale(1.50);    
+  }
+  
+  .showcase_title {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #444;
+  }
+  
+  .showcase__price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .new__price {
+    color: #27ae60;
+    font-weight: bold;
+  }
+  
+  .old__price {
+    color: #888;
+    text-decoration: line-through;
+  }
+  
