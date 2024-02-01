@@ -2,7 +2,7 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        font-family: 'Poppins', sans-serif;
+        font-family: 'Open Sans', sans-serif;
     }
     a{
         text-decoration: none;
@@ -17,7 +17,7 @@
         width: 1280px;
         margin: 0 auto;
     }
-/* ----------------------------------------------------------- */
+/* -----------------------darkBtn------------------------------------ */
 
   .dark__btn {
     width: 80px;
@@ -27,6 +27,7 @@
     position: fixed;
     top: 30px;
     right: 30px;
+    z-index: 999;
   }
   .dark__btn::after {
     content: '';
@@ -56,7 +57,7 @@
   }
   
   .showcase__wrapper {
-    flex: 1 1 23%; /* Adjust the width of each wrapper */
+    flex: 1 1 23%;
     margin: 15px 20px;
   }
   
